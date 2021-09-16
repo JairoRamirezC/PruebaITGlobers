@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+// var colors
+$primary_color: #0084f4;
+$primary_colorBackground: #6e01b6;
+$primary_colorLight: rgba(0, 94, 153, 0.3);
+$color_textDark: black;
+$color_textLight: white;
+$color_textGray: #96999b;
+$error_color: red;
+
+// Components
+@import "../../components/NavBar/navbar";
+@import "../../components/Form/formuser";
+@import "../../components/Modal/modal";

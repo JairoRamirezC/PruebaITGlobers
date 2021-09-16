@@ -1,0 +1,57 @@
+.navbar {
+  background-color: $primary_colorBackground;
+  color: $color_textLight;
+  display: flex;
+  font-size: 1.8rem;
+  height: 7rem;
+  justify-content: space-around;
+  width: 100%;
+  &-sectionLogo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+  }
+  &-logo {
+    height: 4.5rem;
+    width: 8rem;
+  }
+  &-sectionItems {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    width: 100%;
+    .navbar__Items {
+      font-size: 1.8rem;
+      list-style: none;
+      margin-right: 2rem;
+      transition: 0.8s;
+      width: 10rem;
+      &:hover {
+        color: $primary_color;
+        cursor: pointer;
+        transition: 0.8s;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    &-sectionLogo {
+      padding: 10px 0;
+      width: 100%;
+    }
+    &-sectionItems {
+      flex-direction: column;
+      .navbar__Items {
+        margin: 0 0 0 2rem;
+        padding: 5px 0;
+      }
+    }
+  }
+}

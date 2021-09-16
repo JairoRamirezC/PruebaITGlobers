@@ -1,0 +1,32 @@
+.modal-background {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  .modal-section {
+    background-color: $color_textLight;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px $color_textGray;
+    font-size: 1.3rem;
+    height: 30%;
+    padding: 20px;
+    width: 30%;
+    .modal-content {
+      height: 80%;
+      text-align: center;
+      h1 {
+        color: $primary_color;
+        margin-bottom: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.formuser {
+  &-herosection {
+    background-image: url("https://itglobers.com/wp-content/uploads/2020/05/it-globers-banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    &-title {
+      align-items: center;
+      color: $color_textLight;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8rem;
+      height: inherit;
+      justify-content: center;
+      padding: 4rem 0;
+    }
+  }
+  &-formsection {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin-bottom: 30px;
+    &-camps {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 40rem;
+      .label {
+        color: $primary_color;
+        font-size: 1.6rem;
+      }
+      .camps__inputs {
+        border: 1px solid $color_textGray;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        height: 3rem;
+        margin: 1rem 0 3rem 0;
+        outline: none;
+        padding: 10px;
+        transition: 0.8s;
+        &:focus {
+          border: 1px solid $primary_color;
+          transition: 0.8s;
+        }
+      }
+      .msg__error {
+        color: $error_color;
+        font-size: 1rem;
+        position: relative;
+        top: -3rem;
+      }
+      button {
+        border: none;
+        border-radius: 50px;
+        background-color: $primary_color;
+        color: $color_textLight;
+        height: 40px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
